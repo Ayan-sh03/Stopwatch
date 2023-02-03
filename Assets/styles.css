@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Orbitron, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: linear-gradient(
+    92deg,
+    rgb(0.392% 12.941% 99.608%) 0%,
+    rgb(5.833% 15.784% 99.632%) 6.25%,
+    rgb(11.275% 18.627% 99.657%) 12.5%,
+    rgb(16.716% 21.471% 99.681%) 18.75%,
+    rgb(22.157% 24.314% 99.706%) 25%,
+    rgb(27.598% 27.157% 99.73%) 31.25%,
+    rgb(33.039% 30% 99.755%) 37.5%,
+    rgb(38.48% 32.843% 99.779%) 43.75%,
+    rgb(43.922% 35.686% 99.804%) 50%,
+    rgb(49.363% 38.529% 99.828%) 56.25%,
+    rgb(54.804% 41.373% 99.853%) 62.5%,
+    rgb(60.245% 44.216% 99.877%) 68.75%,
+    rgb(65.686% 47.059% 99.902%) 75%,
+    rgb(71.127% 49.902% 99.926%) 81.25%,
+    rgb(76.569% 52.745% 99.951%) 87.5%,
+    rgb(82.01% 55.588% 99.975%) 93.75%,
+    rgb(87.451% 58.431% 100%) 100%
+  );
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 25px;
+  font-size: 40px;
+}
+.stopwatch {
+  height: 90vh;
+  display: block;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.watch {
+    padding-left: 5px;
+    padding-right: 5px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.container button {
+  height: 2.8rem;
+  width: 5rem;
+  border-radius: 1.4rem;
+  border: none;
+  background: #a792e7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:  0.49s;
+  font-weight: bold;
+
+
+}
+
+.container button:hover{
+    transform: translateY(5px);
+
+}
+
+#stop {
+  background: #906ef5;
+}
+
+@media only screen and (max-width: 600px) {
+    .watch {
+      font-size: 50px;
+    }
+  }
+  
